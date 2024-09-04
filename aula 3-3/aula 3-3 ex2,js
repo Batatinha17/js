@@ -1,0 +1,28 @@
+// Código para imprimir a estação do ano
+prompt = require('prompt-sync')()
+const mes = Number(prompt('Digite um mês (1 a 12): '))
+
+switch (mes) {
+    case 1:
+    case 2:
+    case 12:
+        console.log('A estação desse mês é o Verão.')
+        break
+    case 3:
+    case 4:
+    case 5:
+        console.log('A estação desse mês é o Outono.')
+        break
+    case 6:
+    case 7:
+    case 8:
+        console.log('A estação desse mês é o Inverno.')
+        break
+    case 9:
+    case 10:
+    case 11:
+        console.log('A estação desse mês é a Primavera.')
+        break
+    default:
+        console.log('Mês inválido.')
+}

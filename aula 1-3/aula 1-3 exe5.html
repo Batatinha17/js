@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<script>
+    const cigarrosPorDia = Number(prompt('Quantos cigarros você fuma por dia?'))
+    const anosFumando = Number(prompt('Há quantos anos você fuma?'))
+    const minutosPorCigarro = 10
+    const minutosPorDia = 24 * 60
+    const diasPorAno = 365
+    const totalCigarros = cigarrosPorDia * anosFumando * diasPorAno
+    const minutosPerdidos = totalCigarros * minutosPorCigarro
+    const totalDias = minutosPerdidos / minutosPorDia
+            
+    alert('Como fumante, você perdeu ' + totalDias.toFixed(0) + ' dias de vida.')
+</script>

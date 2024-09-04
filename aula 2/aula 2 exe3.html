@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<script>
+    const percentualDesconto = 10
+    const horasTrabalhadas = parseFloat(prompt('Digite as horas trabalhadas no mês:'))
+    const valorHora = parseFloat(prompt('Digite o valor das horas trabalhadas:'))
+    const bruto = horasTrabalhadas * valorHora
+    const totalDesconto = (percentualDesconto / 100) * bruto
+    const liquido = bruto - totalDesconto
+
+    alert('Horas trabalhadas: ' + horasTrabalhadas + 
+    ', salário bruto: R$' + bruto.toFixed(2) + 
+    ', desconto: R$' + totalDesconto.toFixed(2) + 
+    '; salário líquido: R$' + liquido.toFixed(2) + '.')
+</script>
