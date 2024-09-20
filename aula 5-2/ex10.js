@@ -3,9 +3,6 @@ prompt = require('prompt-sync')()
 
 let nomes = ['joao', 'erica', 'pouey', 'almeida', 'freitas', 'mariana', 'gian', 'gerson', 'adriano', 'assis']
 let n = prompt("Digite um nome: ").toLowerCase();
+let result = nomes.includes(n) ? "ACHEI" : "NÃO ACHEI"
 
-if (nomes.includes(n)) {
-    console.log(`Achei o nome ${n}`);
-} else {
-    console.log(`Não achei o nome ${n}`);
-}
+console.log(result)
